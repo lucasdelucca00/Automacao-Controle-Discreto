@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Module xmlns="http://waters.sourceforge.net/xsd/module" xmlns:B="http://waters.sourceforge.net/xsd/base" Name="pratica_3_sumo">
+<EventDeclList>
+<EventDecl Kind="UNCONTROLLABLE" Name="be"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="bd"/>
+<EventDecl Kind="CONTROLLABLE" Name="tempo"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p1_achou"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p2_achou"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p1_perdeu"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p2_perdeu"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p3_achou"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p4_achou"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="p5_achou"/>
+</EventDeclList>
+<ComponentList>
+<SimpleComponent Kind="PLANT" Name="pratica_4">
+<Graph>
+<NodeList>
+<SimpleNode Initial="true" Name="repouso">
+<PointGeometry>
+<Point X="176" Y="352"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-41" Y="16"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="espera_e">
+<PointGeometry>
+<Point X="272" Y="256"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-26" Y="11"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="espera_d">
+<PointGeometry>
+<Point X="272" Y="432"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-24" Y="10"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="procurar">
+<PointGeometry>
+<Point X="656" Y="336"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-59" Y="-9"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="gira_e">
+<PointGeometry>
+<Point X="880" Y="176"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-16" Y="18"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="gira_d">
+<PointGeometry>
+<Point X="880" Y="544"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-7" Y="13"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="atacar">
+<PointGeometry>
+<Point X="1248" Y="352"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="13" Y="-7"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="gira_eixo_d">
+<PointGeometry>
+<Point X="656" Y="688"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-34" Y="10"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="gira_eixo_e">
+<PointGeometry>
+<Point X="656" Y="0"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-36" Y="-27"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="gira_eixo_0">
+<PointGeometry>
+<Point X="928" Y="336"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="15" Y="-9"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="start_gira_e">
+<PointGeometry>
+<Point X="432" Y="256"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-76" Y="-3"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="start_gira_d">
+<PointGeometry>
+<Point X="400" Y="448"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-70" Y="-31"/>
+</LabelGeometry>
+</SimpleNode>
+</NodeList>
+<EdgeList>
+<Edge Source="repouso" Target="espera_e">
+<LabelBlock>
+<SimpleIdentifier Name="be"/>
+</LabelBlock>
+<SplineGeometry>
+<Point X="204" Y="291"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="repouso" Target="espera_d">
+<LabelBlock>
+<SimpleIdentifier Name="bd"/>
+</LabelBlock>
+<SplineGeometry>
+<Point X="207" Y="402"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_e" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="-64" Y="-15"/>
+</LabelGeometry>
+</LabelBlock>
+<StartPointGeometry>
+<Point X="432" Y="256"/>
+</StartPointGeometry>
+</Edge>
+<Edge Source="start_gira_d" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="-52" Y="-10"/>
+</LabelGeometry>
+</LabelBlock>
+<StartPointGeometry>
+<Point X="400" Y="448"/>
+</StartPointGeometry>
+</Edge>
+<Edge Source="procurar" Target="gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="p1_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="31" Y="-25"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="736" Y="233"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="procurar" Target="gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="p2_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-13" Y="30"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="757" Y="437"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_e" Target="atacar">
+<LabelBlock>
+<SimpleIdentifier Name="p2_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-6" Y="-28"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1103" Y="225"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_d" Target="atacar">
+<LabelBlock>
+<SimpleIdentifier Name="p1_achou"/>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1116" Y="490"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="atacar" Target="gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="p2_perdeu"/>
+<LabelGeometry Anchor="NW">
+<Point X="-11" Y="-21"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="atacar" Target="gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="p1_perdeu"/>
+<LabelGeometry Anchor="NW">
+<Point X="-5" Y="5"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1032" Y="471"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="procurar" Target="gira_eixo_d">
+<LabelBlock>
+<SimpleIdentifier Name="p4_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-55" Y="2"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="640" Y="523"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="procurar" Target="gira_eixo_e">
+<LabelBlock>
+<SimpleIdentifier Name="p3_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-55" Y="-27"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="642" Y="161"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="procurar" Target="gira_eixo_0">
+<LabelBlock>
+<SimpleIdentifier Name="p5_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-34" Y="-20"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="gira_eixo_e" Target="gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="p1_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="23" Y="0"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="792" Y="92"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_d" Target="gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="p2_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="2" Y="-9"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="777" Y="635"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_0" Target="gira_eixo_e">
+<LabelBlock>
+<SimpleIdentifier Name="p3_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-23" Y="-62"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="925" Y="113"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_0" Target="gira_eixo_d">
+<LabelBlock>
+<SimpleIdentifier Name="p4_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-75" Y="55"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="940" Y="576"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_0" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="-19" Y="2"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="795" Y="350"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_0" Target="gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="p1_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-8" Y="-40"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="gira_eixo_0" Target="gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="p2_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-52" Y="-48"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="929" Y="462"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_e" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="6" Y="-36"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="673" Y="172"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_d" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="-2" Y="-36"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="673" Y="515"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_e" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="p1_perdeu"/>
+<LabelGeometry Anchor="NW">
+<Point X="-38" Y="20"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="779" Y="265"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_d" Target="procurar">
+<LabelBlock>
+<SimpleIdentifier Name="p2_perdeu"/>
+<LabelGeometry Anchor="NW">
+<Point X="48" Y="43"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="804" Y="428"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="espera_e" Target="start_gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="-25" Y="-25"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="354" Y="244"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="espera_d" Target="start_gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="tempo"/>
+<LabelGeometry Anchor="NW">
+<Point X="-23" Y="11"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="334" Y="447"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_e" Target="gira_eixo_e">
+<LabelBlock>
+<SimpleIdentifier Name="p3_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="2" Y="-13"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="497" Y="87"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_e" Target="gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="p1_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-110" Y="25"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="637" Y="168"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_e" Target="gira_eixo_0">
+<LabelBlock>
+<SimpleIdentifier Name="p5_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="105" Y="53"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="721" Y="241"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_e" Target="gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="p2_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="43" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="639" Y="481"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_e" Target="gira_eixo_d">
+<LabelBlock>
+<SimpleIdentifier Name="p4_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="34" Y="36"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="497" Y="537"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_d" Target="gira_eixo_e">
+<LabelBlock>
+<SimpleIdentifier Name="p3_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-20" Y="-72"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="493" Y="208"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_d" Target="gira_e">
+<LabelBlock>
+<SimpleIdentifier Name="p1_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="75" Y="-69"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="609" Y="252"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_d" Target="gira_eixo_0">
+<LabelBlock>
+<SimpleIdentifier Name="p5_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-161" Y="29"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="663" Y="456"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_d" Target="gira_d">
+<LabelBlock>
+<SimpleIdentifier Name="p2_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="48" Y="-12"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="640" Y="577"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="start_gira_d" Target="gira_eixo_d">
+<LabelBlock>
+<SimpleIdentifier Name="p4_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-21" Y="23"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="491" Y="616"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_d" Target="gira_eixo_0">
+<LabelBlock>
+<SimpleIdentifier Name="p5_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-79" Y="87"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="789" Y="529"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="gira_eixo_e" Target="gira_eixo_0">
+<LabelBlock>
+<SimpleIdentifier Name="p5_achou"/>
+<LabelGeometry Anchor="NW">
+<Point X="-27" Y="-47"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="788" Y="171"/>
+</SplineGeometry>
+</Edge>
+</EdgeList>
+</Graph>
+</SimpleComponent>
+</ComponentList>
+</Module>

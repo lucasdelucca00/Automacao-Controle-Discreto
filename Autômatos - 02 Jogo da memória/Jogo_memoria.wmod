@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Module xmlns="http://waters.sourceforge.net/xsd/module" xmlns:B="http://waters.sourceforge.net/xsd/base" Name="Jogo_memoria">
+<B:Comment></B:Comment>
+<EventDeclList>
+<EventDecl Kind="PROPOSITION" Name=":accepting"/>
+<EventDecl Kind="PROPOSITION" Name=":forbidden"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="B1"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="B2"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="B3"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="B4"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="M1"/>
+<EventDecl Kind="UNCONTROLLABLE" Name="M2"/>
+<EventDecl Kind="CONTROLLABLE" Name="Temp300"/>
+<EventDecl Kind="CONTROLLABLE" Name="Temp500"/>
+</EventDeclList>
+<ComponentList>
+<SimpleComponent Kind="PLANT" Name="Jogo_memoria">
+<Graph>
+<NodeList>
+<SimpleNode Name="Confere1_m1">
+<PointGeometry>
+<Point X="596" Y="847"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Confere1_m2">
+<PointGeometry>
+<Point X="949" Y="1015"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Confere2_m1">
+<PointGeometry>
+<Point X="593" Y="1100"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="DesligaLed1_m2">
+<PointGeometry>
+<Point X="711" Y="471"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-59" Y="10"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="DesligaLed2_m2">
+<PointGeometry>
+<Point X="880" Y="672"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-20" Y="13"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="DesligaLed3_m2">
+<PointGeometry>
+<Point X="862" Y="382"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="6"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="DesligaLed4_m2">
+<PointGeometry>
+<Point X="1104" Y="656"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-24" Y="9"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="DesligaLed_m1">
+<PointGeometry>
+<Point X="346" Y="597"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="DesligaLed_m11">
+<PointGeometry>
+<Point X="192" Y="1056"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig1">
+<PointGeometry>
+<Point X="639" Y="573"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig11">
+<PointGeometry>
+<Point X="928" Y="480"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig111">
+<PointGeometry>
+<Point X="976" Y="400"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig1111">
+<PointGeometry>
+<Point X="1038" Y="602"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig2">
+<PointGeometry>
+<Point X="944" Y="256"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig22">
+<PointGeometry>
+<Point X="1065" Y="460"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig222">
+<PointGeometry>
+<Point X="992" Y="676"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig3">
+<PointGeometry>
+<Point X="1161" Y="553"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="9" Y="7"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig33">
+<PointGeometry>
+<Point X="941" Y="756"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Dig4">
+<PointGeometry>
+<Point X="957" Y="919"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led1_m1">
+<PointGeometry>
+<Point X="506" Y="259"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led1_m11">
+<PointGeometry>
+<Point X="589" Y="980"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led1_m2">
+<PointGeometry>
+<Point X="528" Y="416"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led1_m21">
+<PointGeometry>
+<Point X="772" Y="786"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led1_m211">
+<PointGeometry>
+<Point X="870" Y="219"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led1_m2111">
+<PointGeometry>
+<Point X="1133" Y="734"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led2_m1">
+<PointGeometry>
+<Point X="438" Y="321"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led2_m11">
+<PointGeometry>
+<Point X="466" Y="892"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led2_m2">
+<PointGeometry>
+<Point X="864" Y="786"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led2_m22">
+<PointGeometry>
+<Point X="783" Y="213"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led2_m222">
+<PointGeometry>
+<Point X="1121" Y="854"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led3_m1">
+<PointGeometry>
+<Point X="377" Y="399"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led3_m11">
+<PointGeometry>
+<Point X="229" Y="859"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led3_m2">
+<PointGeometry>
+<Point X="761" Y="289"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led3_m23">
+<PointGeometry>
+<Point X="1185" Y="843"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led4_m1">
+<PointGeometry>
+<Point X="346" Y="486"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led4_m11">
+<PointGeometry>
+<Point X="63" Y="955"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Led4_m2">
+<PointGeometry>
+<Point X="1200" Y="737"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Modo1">
+<PointGeometry>
+<Point X="567" Y="211"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Modo2">
+<PointGeometry>
+<Point X="736" Y="320"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Perdeu1">
+<PointGeometry>
+<Point X="390" Y="788"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Perdeu2">
+<PointGeometry>
+<Point X="947" Y="542"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="ProximaRodada">
+<PointGeometry>
+<Point X="672" Y="1008"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Initial="true" Name="Repouso">
+<PointGeometry>
+<Point X="723" Y="667"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Seq1">
+<PointGeometry>
+<Point X="362" Y="663"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Seq11">
+<PointGeometry>
+<Point X="48" Y="656"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Seq2">
+<PointGeometry>
+<Point X="424" Y="693"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Seq21">
+<PointGeometry>
+<Point X="336" Y="960"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Seq3">
+<PointGeometry>
+<Point X="489" Y="744"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Seq31">
+<PointGeometry>
+<Point X="512" Y="1136"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="Venceu1Rodada">
+<PointGeometry>
+<Point X="688" Y="896"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="VenceuM1">
+<PointGeometry>
+<Point X="689" Y="1139"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="VenceuM2">
+<PointGeometry>
+<Point X="918" Y="1080"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="5" Y="5"/>
+</LabelGeometry>
+</SimpleNode>
+</NodeList>
+<EdgeList>
+<Edge Source="Confere1_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="Confere1_m1" Target="Venceu1Rodada">
+<LabelBlock>
+<SimpleIdentifier Name="Temp500"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="645" Y="880"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Confere1_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="846" Y="848"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Confere1_m2" Target="VenceuM2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="953" Y="1073"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Confere2_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="Confere2_m1" Target="VenceuM1">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="635" Y="1157"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed1_m2" Target="Dig1">
+<LabelBlock>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="669" Y="511"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed1_m2" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="832" Y="493"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed1_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="DesligaLed2_m2" Target="Dig11">
+<LabelBlock>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="-13" Y="19"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="903" Y="564"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed2_m2" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="-19" Y="-33"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="937" Y="604"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed2_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="802" Y="668"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed3_m2" Target="Dig111">
+<LabelBlock>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="931" Y="363"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed3_m2" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="898" Y="455"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed3_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="791" Y="514"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed4_m2" Target="Dig1111">
+<LabelBlock>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1116" Y="602"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed4_m2" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1055" Y="587"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed4_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="927" Y="634"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed_m1" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="326" Y="693"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="520" Y="620"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed_m1" Target="Seq1">
+<LabelBlock>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="323" Y="626"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed_m11" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="244" Y="947"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed_m11" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="439" Y="865"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="DesligaLed_m11" Target="Seq11">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="202" Y="931"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig1" Target="Led1_m21">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="694" Y="684"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="675" Y="617"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig11" Target="Dig2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1017" Y="357"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig11" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="945" Y="505"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig11" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="826" Y="564"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig111" Target="Dig22">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1052" Y="405"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig111" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="985" Y="458"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig111" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="850" Y="510"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig1111" Target="Dig222">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1040" Y="646"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig1111" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1008" Y="560"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig1111" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="888" Y="615"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig2" Target="Led1_m211">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="912" Y="205"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="853" Y="452"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig22" Target="Dig3">
+<LabelBlock>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1151" Y="487"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig22" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="Dig22" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="902" Y="540"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig222" Target="Dig33">
+<LabelBlock>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="980" Y="727"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig222" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="984" Y="608"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig222" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="866" Y="681"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig3" Target="Led1_m2111">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1169" Y="629"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig3" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="967" Y="585"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig33" Target="Dig4">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="975" Y="849"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig33" Target="Perdeu2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="958" Y="654"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig33" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="Dig4" Target="Confere1_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="973" Y="984"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Dig4" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="841" Y="808"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m1" Target="Led2_m1">
+<LabelBlock>
+<SimpleIdentifier Name="Temp500"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="450" Y="261"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="623" Y="437"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m11" Target="Led2_m11">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="520" Y="954"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m11" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="655" Y="834"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m2" Target="DesligaLed1_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="615" Y="418"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="626" Y="528"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m21" Target="Led2_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="822" Y="800"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m21" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="746" Y="733"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m211" Target="Led2_m22">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="832" Y="176"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m211" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="795" Y="426"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m2111" Target="Led2_m222">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1146" Y="797"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led1_m2111" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="937" Y="711"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m1" Target="Led3_m1">
+<LabelBlock>
+<SimpleIdentifier Name="Temp500"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="380" Y="336"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="548" Y="496"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m11" Target="Led3_m11">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="325" Y="885"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m11" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="589" Y="780"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m2" Target="DesligaLed2_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="918" Y="755"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="796" Y="732"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m22" Target="Led3_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="767" Y="226"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m22" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="771" Y="424"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m222" Target="Led3_m23">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1176" Y="872"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led2_m222" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="915" Y="772"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m1" Target="Led4_m1">
+<LabelBlock>
+<SimpleIdentifier Name="Temp500"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="331" Y="426"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="527" Y="533"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m11" Target="Led4_m11">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="120" Y="911"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m11" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="445" Y="742"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m2" Target="DesligaLed3_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="814" Y="315"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="748" Y="468"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m23" Target="Led4_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1235" Y="801"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led3_m23" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="979" Y="745"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led4_m1" Target="DesligaLed_m1">
+<LabelBlock>
+<SimpleIdentifier Name="Temp500"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="314" Y="532"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led4_m1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="517" Y="575"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led4_m11" Target="DesligaLed_m11">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="108" Y="1000"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led4_m2" Target="DesligaLed4_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="1189" Y="679"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Led4_m2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="990" Y="670"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Modo1" Target="Led1_m1">
+<LabelBlock>
+<SimpleIdentifier Name="Temp500"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="521" Y="203"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Modo1" Target="Modo1">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="527" Y="78"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Modo2" Target="Led1_m2">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="676" Y="402"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Modo2" Target="Modo2">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="616" Y="226"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Perdeu1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="549" Y="744"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Perdeu2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="837" Y="595"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="ProximaRodada" Target="Led1_m11">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="628" Y="1017"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="ProximaRodada" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="710" Y="855"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Repouso" Target="Modo1">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="651" Y="419"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Repouso" Target="Modo2">
+<LabelBlock>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="743" Y="482"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq1" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="345" Y="726"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="527" Y="652"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq1" Target="Seq2">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="374" Y="677"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq11" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="164" Y="712"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq11" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="326" Y="619"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq11" Target="Seq21">
+<LabelBlock>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="70" Y="869"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq2" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="386" Y="738"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="565" Y="671"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq2" Target="Seq3">
+<LabelBlock>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="447" Y="718"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq21" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="291" Y="869"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq21" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="528" Y="855"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq21" Target="Seq31">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="363" Y="1132"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq3" Target="Confere1_m1">
+<LabelBlock>
+<SimpleIdentifier Name="B2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="538" Y="799"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq3" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B3"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="425" Y="765"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq3" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="602" Y="704"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq31" Target="Confere2_m1">
+<LabelBlock>
+<SimpleIdentifier Name="B3"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="567" Y="1133"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq31" Target="Perdeu1">
+<LabelBlock>
+<SimpleIdentifier Name="B1"/>
+<SimpleIdentifier Name="B2"/>
+<SimpleIdentifier Name="B4"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="389" Y="1012"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Seq31" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="632" Y="935"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Venceu1Rodada" Target="ProximaRodada">
+<LabelBlock>
+<SimpleIdentifier Name="Temp300"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="684" Y="981"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="Venceu1Rodada" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+</Edge>
+<Edge Source="VenceuM1" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="725" Y="925"/>
+</SplineGeometry>
+</Edge>
+<Edge Source="VenceuM2" Target="Repouso">
+<LabelBlock>
+<SimpleIdentifier Name="M1"/>
+<SimpleIdentifier Name="M2"/>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="807" Y="900"/>
+</SplineGeometry>
+</Edge>
+</EdgeList>
+</Graph>
+</SimpleComponent>
+</ComponentList>
+</Module>
